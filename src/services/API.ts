@@ -1,6 +1,7 @@
 import axios from "axios";
+import { PlanetsTypes } from "@/types";
 
-export default (url: string = import.meta.env.VITE_SWAPI_BASE_URL) => {
+export default (url: string = PlanetsTypes.baseUrl) => {
   return axios.create({
     baseURL: url
   })

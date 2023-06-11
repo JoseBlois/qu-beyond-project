@@ -1,9 +1,17 @@
 import API from "./API";
-import type { PlanetsResponse } from "@/types";
+import { PlanetsTypes } from "@/types";
 
 export default {
   fetchPlanets: async () => {
-    const response: PlanetsResponse = (await API().get('/planets')).data;
-    return response
+    let response: PlanetsTypes.Response | undefined
+    let error: Error | undefined;
+    try {
+      response = await API().get('/planets');
+    }
+    catch (e) {
+      error = e as Error
+    }
+    const data = response?.data
+    return { data, error }
   }
 };

@@ -1,21 +1,19 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import PlanetsAPI from '@/services/PlanetsAPI';
-import type { PlanetsResponse, Planet } from "@/types";
+import { usePlantesStore } from '@/stores/planetsStore';
 
-const response = ref<PlanetsResponse | null>(null)
+const planetsStore = usePlantesStore();
 
-onMounted(async () => {
-    response.value = await PlanetsAPI.fetchPlanets();
-})
+planetsStore.getPlanets()
+
 
 </script>
 
 <template>
     <div>
-        <div v-if="response">
-            <div v-for="planet in response.results">
-                <span>{{ planet.name }} - {{ planet.population }}</span>
+        <div>{{ planetsStore.isFetching ? 'PENDING' : 'DONE' }}</div>
+        <div v-if="!planetsStore.isFetching">
+            <div v-for="planet in planetsStore.sortedPlanets">
+                <span>{{ planet }}</span>
             </div>
         </div>
         <div v-else>Loading...</div>
