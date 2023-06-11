@@ -1,52 +1,40 @@
-# vue-latest-project
+# QU-Beyond coding challenge.
+Hi There! This project was created as a answer for the QU-Beyond coding challenge.
 
-This template should help get you started developing with Vue 3 in Vite.
+## Objective:
 
-## Recommended IDE Setup
+The objective of this challenge is not necessarily just to solve the problem - but to
+evaluate your software development skills, code quality, creativity, and resourcefulness as a
+potential future colleague. Please share the necessary artifacts you would provide to your
+colleagues in a real-world professional setting.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Problem to solve:
 
-## Type Support for `.vue` Imports in TS
+We have a simple API that returns a JSON array. We would like you to use HTML, CSS and
+Javascript to read the API and display it in an organized way. In addition, you should add in
+some sort of sorting mechanic to the front-end. Use preferably Vue.js as base and feel free to
+add any other framework or library you would consider necessary to achieve the task.
+`https://swapi.dev/documentation`
+Feel free to use any data - but perhaps you can use the “planet” resource here.
+There is no right answer - just looking for an understanding of how you interpret the assignment
+and what decisions you make to build a simple project.
+After finishing your code answer the following questions:
+1. What's a closure? Where in the code is there a closure?
+2. Which are the potential side-effects in any function? Could you point out any of these cases in
+your code? Are they expected? Can they be avoided?
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## About the project
+This Vue.js project was created using `npm init vue@latest`. 
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+### Follow this steps to run the project:
 
-## Customize configuration
+1. Position yourself in the root directory of the project `../qu-beyond-project`.
+1. Run `npm install` to install all dependencies.
+1. Run `npm run dev` to run the application in dev mode or `npm run build && npm run preview` to launch the application in production mode.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Tests:
 
-## Project Setup
+### Storybook:
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+### Answers:
