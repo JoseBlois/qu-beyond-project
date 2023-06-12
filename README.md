@@ -36,3 +36,11 @@ This Vue.js project was created using `npm init vue@latest`.
 ### Tests:
 
 ### Answers:
+1. What's a closure ?
+1. Closures JavaScript are a javascript feature that used to create private variables in JavaScript, encapsulating data within a function
+and providing controlled access to that data, this also gives functions the ability to maintain state across multiple uses. Currently the code generated in this app doesn't have a closure.
+
+2. Which are the potential side-effects in any function? Could you point out any of these cases in
+your code? Are they expected? Can they be avoided?
+2. Side effects of a function are changes or modifications that a function makes to variables or states outside of its scope. An example of this can be found in the `planetsStore.ts` file
+inside the `getPlanets` function where it set the isFetching part of the state before and after fetching.
