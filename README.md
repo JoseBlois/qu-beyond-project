@@ -25,7 +25,7 @@ your code? Are they expected? Can they be avoided?
 
 
 ## About the project
-This Vue.js project was created using `npm init vue@latest`. 
+This Vue.js project was created using `npm init vue@latest`.
 
 ### Follow this steps to run the project:
 
@@ -34,7 +34,5 @@ This Vue.js project was created using `npm init vue@latest`.
 1. Run `npm run dev` to run the application in dev mode or `npm run build && npm run preview` to launch the application in production mode.
 
 ### Tests:
-
-### Storybook:
 
 ### Answers:
